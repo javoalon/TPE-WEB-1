@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediccion Playoffs</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="images/nba.png">
+</head>
+<body>
+    <nav>
+        <div class="menuCelulares">
+            <a href="index.html"><img src="images/nba.jpg" alt="NBA" class="logoNBA"></a>
+            <img src="images/menu.png" id="menuBurger" class="imgMenu">
+        </div>
+        <ul class="navigation" id="menu">
+            <li class="botones"><a href="index.html">PLAYOFFS</a></li>
+            <li class="botones"><a href="stats.html">Estadisticas de jugadores</a></li>
+            <li class="botones"><a href="prediccion.html">PREDICCION</a></li>
+        </ul>
+    </nav>
+    <div class="todoPrediccion">
+        <form class="predict" id="predict">
+            <div class="primeraParteForm">
+                <h2>Rellene los datos y seleccione el ganador de cada serie, de la primer ronda de los playoffs 2022:</h2>
+                <label>Nombre </label><input type="text" id="nombre" required/>
+                <br>
+                <br>
+                <label>Email </label><input type="email" id="email" required/>
+            </div>
+            <div class="segundaParteForm">
+                <div class="seriesOeste">
+                    <h1>OESTE</h1>
+                    <div>
+                        SERIE 1:
+                        <input type="radio" name="serie1"><img src="images/suns.png">
+                        <input type="radio" name="serie1"><img src="images/pelicans.png">
+                    </div>
+                    <div>
+                        SERIE 2:
+                        <input type="radio" name="serie2"><img src="images/mavs.png">
+                        <input type="radio" name="serie2"><img src="images/jazz.png">
+                    </div>
+                    <div>
+                        SERIE 3:
+                        <input type="radio" name="serie3"><img src="images/warriors.png">
+                        <input type="radio" name="serie3"><img src="images/nuggets.png">
+                    </div>
+                    <div>
+                        SERIE 4:
+                        <input type="radio" name="serie4"><img src="images/memphis.png">
+                        <input type="radio" name="serie4"><img src="images/timberwolves.png">
+                    </div>
+                </div>
+                <div class="seriesEste">
+                    <h1>ESTE</h1>
+                    <div>
+                        SERIE 5:
+                        <input type="radio" name="serie5"><img src="images/heat.png">
+                        <input type="radio" name="serie5"><img src="images/hawks.png">
+                    </div>    
+                    <div>    
+                        SERIE 6:
+                        <input type="radio" name="serie6"><img src="images/76ers.png">
+                        <input type="radio" name="serie6"><img src="images/raptors.png">
+                    </div>    
+                    <div>    
+                        SERIE 7:
+                        <input type="radio" name="serie7"><img src="images/bucks.png">
+                        <input type="radio" name="serie7"><img src="images/bulls.png">
+                    </div>    
+                    <div>    
+                        SERIE 8:
+                        <input type="radio" name="serie8"><img src="images/celtics.png">
+                        <input type="radio" name="serie8"><img src="images/nets.png">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="captchaSend">
+            <label>Captcha</label><input type="text" id="inputCaptcha" value="" placeholder="Inserte Captcha"/>
+            <div id="numeroCaptcha"></div>
+            <button id="cambiarNumero"><img src="images/refresh.png" width="15px" alt="Refrescar numero"></button>
+        </div>
+        <div class="botonEnviar">
+            <button id="btn-enviar">Enviar Prediccion</button>
+            <div id="ladoEnviar"></div>
+        </div>
+    </div>    
+    <footer>NBA ARGENTINA: PLAYOFFS 2022 || GRUPO 073</footer>
+    <script src="js/captcha.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

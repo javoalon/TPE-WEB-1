@@ -1,0 +1,270 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+    margin: 25px;
+    height: 50px;
+    display: block;
+    margin-left: 10px;
+}
+nav ul li{
+    display: block;
+}
+.menuCelulares{
+    display: flex;
+}
+.imgMenu{
+    margin-left: auto;
+}
+.IMGplayoffs {
+    margin: 10px;
+    margin-bottom: 0;
+    width: 90%;
+    border: 2px solid rgb(23, 64, 139);
+    border-radius: 8px;
+}
+/*COLORES LOGO NBA: azul:(23, 64, 139); rojo:(201, 8, 42)*/
+.navigation {
+    position: relative;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(23, 64, 139);
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    visibility: hidden;
+}
+.logoNBA {
+    width: 85px;
+    background-color: rgb(23, 64, 139);
+}
+nav ul li{
+    list-style: none;
+    margin: 5px;
+    text-transform: uppercase;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+nav ul li:hover {
+    background-color: rgb(201, 8, 42);
+    transition: all ease-in-out 200ms;
+    border-radius: 5px;
+}
+a:visited {
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.todaInfo {
+    display: block;
+    margin: 10px;
+    border: 2px solid rgb(23, 64, 139);
+    border-radius: 8px;
+    background-color: rgb(23, 64, 139, 0.3);
+}
+h1{
+    text-decoration:underline;
+    margin: 5px;
+    padding: 5px;
+}
+h2.tituloConf{
+    margin: 5px;
+    padding: 5px;
+}
+.infoExtra{
+    padding: 12px;
+    font-size: 20px;
+}
+.equipos {
+    margin: 5px;
+}
+.clasificados{
+    display: block;
+}
+.conferencias {
+    margin-bottom: 12px;
+    border-bottom: 2px solid rgb(23, 64, 139);
+    padding-left: 10px;
+}
+.principioHome{
+    display: block;
+}
+.tituloPrincipal{
+    margin: 12px;
+    margin-right: 10px;
+    font-size: 2rem;
+    padding: 5px;
+    border-bottom: 10px solid rgb(201, 8, 42);
+    border-top: 10px solid rgb(201, 8, 42);
+    border-radius: 8px;
+}
+.predict{
+    margin: 12px;
+    display: block;
+    padding-bottom: 15px;
+}
+form.predict div div {
+    margin: 15px;
+}
+div form img {
+    width: 35px;
+}
+.primeraParteForm{
+    display: block;
+    margin: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.segundaParteForm{
+    display: flex;
+    justify-content: space-around;
+}
+.captchaSend{
+    display: flex;
+    justify-content: center;
+}
+.botonEnviar{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.semititulo{
+    margin: 25px;
+}
+.todoContent{
+    background-color: rgb(23, 64, 139, 0.3);
+    padding: 15px;
+    margin-top: 25px;
+    border: 3px solid rgb(23, 64, 139);
+    border-radius: 8px;
+}
+td, tr{
+    border: 1px solid rgb(23, 64, 139); 
+}
+td {
+    padding: 10px;
+}
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    border-top: 2px solid rgb(23, 64, 139);
+}
+.todoPrediccion{
+    background-color: rgb(23, 64, 139, 0.3);
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid rgb(23, 64, 139);
+    border-radius: 8px;
+}
+.seriesOeste{
+    display: flex;
+    flex-direction: column;
+}
+.seriesEste{
+    display: flex;
+    flex-direction: column;
+}
+div.formYTabla form input, div.formYTabla form button{
+    border-radius: 6px;
+    border-style: none;
+    border: 1px solid rgb(23, 64, 139);
+}
+p img{
+    width: 10px;
+    border: 1px solid rgb(23, 64, 139);
+    border-radius: 3px;
+    padding: 1px;
+}
+div table {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+table tr:first-child{
+    background-color:rgb(23, 64, 139);
+    color: white;
+}
+.oculto{
+    visibility: hidden;
+    height: 0;
+}
+tbody button{
+    background-color: rgb(23, 64, 139, 0.3);
+    border-radius: 15px;
+    border: 0px;
+    float: right;
+}
+tbody button:hover{
+    background-color: rgb(201, 8, 42, 0.3);
+}
+tbody button img{
+    width: 10px; 
+}
+.queSeVea{
+    visibility: visible;
+}
+div form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buenaEstadistica{
+    background-color: rgba(22, 124, 22, 0.685);
+}
+@media only screen and (min-width: 1024px){
+    .navigation{
+        display: flex;
+        align-items:center;
+        visibility: visible;
+        width: 100%;
+    }
+    .imgMenu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        margin: 15px 50px;
+    }
+    .principioHome{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 45px;
+    }
+    .todaInfo{
+        margin: 50px;
+        padding: 15px;
+    }
+    .IMGplayoffs{
+        width: 50%;
+    }
+    .formYTabla{
+        margin: 10px;
+    }
+    .tituloPrincipal{
+        font-size: 3.5rem;
+    }
+    div form img{
+        width: 50px;
+    }
+    .clasificados{
+        display: flex;
+        justify-content: space-around;
+    }
+    .todoPrediccion{
+        padding: 15px;
+        margin: 50px;
+    }
+    .todoContent{
+        padding: 15px;
+        margin: 50px;
+    }
+    div table {
+        justify-content: center;
+    }
+}

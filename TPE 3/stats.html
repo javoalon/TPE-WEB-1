@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="images/nba.png">
+</head>
+<body>
+    <nav>
+        <div class="menuCelulares">
+            <a href="index.html"><img src="images/nba.jpg" alt="NBA" class="logoNBA"></a>
+            <img src="images/menu.png" id="menuBurger" class="imgMenu">
+        </div>
+        <ul class="navigation" id="menu">
+            <li><a href="index.html">PLAYOFFS</a></li>
+            <li><a href="stats.html">Estadisticas de jugadores</a></li>
+            <li><a href="prediccion.html">PREDICCION</a></li>
+        </ul>
+    </nav>
+    <div class="todoContent">
+        <h1>Estadisticas de los jugadores de la NBA mas influyentes en la temporada regular 2022:</h1>
+        <div class="formYTabla">
+            <h2>Podes agregar a tus jugadores favoritos para poder compararlos!</h2>
+            <form>
+                <label>Jugador: </label><input type="text" id="inp-jugador" placeholder="ej: LeBron">
+                <label>Equipo: </label><input type="text" id="inp-equipo" placeholder="ej: Union Tandil">
+                <label>Puntos p.p: </label><input type="number" id="inp-ppp" placeholder="ej: 18">
+                <label>Asistencias p.p: </label><input type="number" id="inp-app" placeholder="ej: 15">
+                <label>Rebotes p.p: </label><input type="number" id="inp-rpp" placeholder="ej: 9">
+                <button type="button" id="agregar">Agregar</button>
+                <button type="button" id="agregarTres">Agregar 3 auto.</button>
+                <label>Filtrar por:</label>
+                <select id="filtroTabla">
+                    <option selected>ID</option>
+                    <option>Mas puntos</option>
+                    <option>Mas asistencias</option>
+                    <option>Mas rebotes</option>
+                </select>
+                <button type="button" id="btn-filtrar">Filtrar</button>
+            </form>
+            <p>Para poder editar, primero llenar formulario, y luego apretar en el boton <img src="images/editar.png"> del jugador que quiera ser editado</p>
+            <table>
+                <tbody id="statsJugadores"></tbody>
+            </table>
+        </div>
+    </div>
+    <footer>NBA ARGENTINA: PLAYOFFS 2022 || GRUPO 073</footer>
+    <script src="js/tablaApi.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
